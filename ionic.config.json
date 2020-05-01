@@ -1,0 +1,7 @@
+{
+  "name": "megahack-app-flourish",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
