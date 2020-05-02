@@ -11,7 +11,10 @@ ion-card {
     padding-bottom: 50px;
 }
 
-.card-image {
-    // width: 372px;
-    // height: 280px;
+.card-header {
+    object-fit: cover;
+}
+
+.card-content {
+    margin-bottom: 20px;
 }
