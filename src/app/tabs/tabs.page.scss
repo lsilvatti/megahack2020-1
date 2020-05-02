@@ -10,3 +10,44 @@ ion-tab-bar.md.hydrated {
 -moz-box-shadow: 1px 8px 28px 0px rgba(0,0,0,0.16);
 box-shadow: 1px 8px 28px 0px rgba(0,0,0,0.16);
 }
+
+ion-tab-button:nth-child(1){
+--color-focused: #D90368;
+--color-selected:#E6026C;
+--ripple-color:#D90368;
+}
+
+ion-tab-button:nth-child(2){
+    --color-focused: #00A6FB;
+    --color-selected:#0096E0;
+    --ripple-color:#0096E0;
+    }
+
+    ion-tab-button:nth-child(3){
+        --color-focused: #14BE4D;
+        --color-selected:#16CC53;
+        --ripple-color:#16CC53;
+        }
+
+        ion-tab-button:nth-child(4){
+            --color-focused: #FFD639;
+            --color-selected:#E6C232;
+            --ripple-color:#E6C232;
+            }
+
+.pp{
+    border: rgb(102, 102, 102) solid 3px;
+    border-radius: 100%;
+    height: 80%;
+}
+
+.pp:active,
+.pp:focus
+{
+ border:3px solid #FFD639;
+ 
+}
+
+.tab-selected .pp{
+    border:3px solid #FFD639;; /* here change your border */
+}
