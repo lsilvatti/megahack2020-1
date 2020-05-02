@@ -1,5 +1,7 @@
 ion-card {
     width: 90%;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 30px;
     border-radius: 40px;
     box-shadow: 1px 8px 28px rgba(0, 0, 0, 0.12);
@@ -11,10 +13,23 @@ ion-card {
     padding-bottom: 50px;
 }
 
-.tip-card-header {
+
+.card-content {
+    margin: 0px 15px 20px 15px;
+}
+
+.card-header{
+    padding: 0px 0px 20px 0px;
+}
+
+.card-image{
+    height: 155px;
+    padding: 0px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
     object-fit: cover;
 }
 
-.tip-card-content {
-    margin-bottom: 20px;
+ion-card-title{
+    margin-bottom: 10px;
 }

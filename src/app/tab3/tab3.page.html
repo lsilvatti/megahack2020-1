@@ -5,11 +5,11 @@
 <ion-content [fullscreen]="true">
   <div class="tip-card-wrapper">
     <ion-card *ngFor="let tip of tipsArray; let i = index">
-      <ion-card-header class="tip-card-header">
-        <ion-img [src]="tip.image" class="tip-card-image"></ion-img>
-        <ion-card-title> {{ tip.title }} </ion-card-title>
+      <ion-card-header class="card-header">
+        <ion-img [src]="tip.image" class="card-image"></ion-img>
       </ion-card-header>
-      <ion-card-content class="tip-card-content">
+      <ion-card-content class="card-content">
+        <ion-card-title> {{ tip.title }} </ion-card-title>
         {{ tip.content }}
       </ion-card-content>
     </ion-card>
