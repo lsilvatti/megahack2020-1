@@ -1,9 +1,19 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>tab4</ion-title>
-  </ion-toolbar>
+<ion-header [translucent]="true">
 </ion-header>
 
-<ion-content>
+<ion-content [fullscreen]="true">
+  <div class="profile-card-wrapper">
+      <ion-img [src]="profileImage" class="profile-image"></ion-img><hr>
+      <div class="profile-info">
+        <ion-title><strong>Nome</strong></ion-title>
+        <ion-card-title class="profile-info name"> {{ profileName }} </ion-card-title><br>
+        <ion-title><strong>E-mail</strong></ion-title>
+        <ion-card-title class="profile-info email"> {{ profileEmail }} </ion-card-title><br>
+        <ion-title><strong>Sexo</strong></ion-title>
+        <ion-card-title class="profile-info sexo"> {{ profileSexo }} </ion-card-title><br>
+      </div>
 
+      <ion-icon name="create-outline" class="profile-edit-photo" title="Trocar Foto"></ion-icon>
+      <ion-button class="profile-button" color="primary" size="large">Editar Perfil</ion-button>
+    </div>
 </ion-content>
