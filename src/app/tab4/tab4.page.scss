@@ -6,6 +6,10 @@
     justify-content: center;
 }
 
+ion-content{
+   height: 100vh;
+}
+
 .profile-image {
     margin-top: 50px;
     width: 120px;
@@ -27,12 +31,16 @@
 
 .profile-button {
     margin-top: 100px;
-    margin-bottom: 200px;
+    margin-bottom: 100px;
 }
 
 .profile-edit-photo {
+    color:white;
+    border-radius: 100px;
+    border: #333 solid 5px;
+    background-color: #333;
     position: absolute;
-    top: 140px;
+    top: 115px;
     transform: translate(90%, 50%);
     -ms-transform: translate(90%, 50%);
     height: 30px;

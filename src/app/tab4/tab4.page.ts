@@ -12,7 +12,7 @@ export class Tab4Page{
   public profileSexo = "";
 
   constructor() {
-    this.profileImage = "assets/imgs/user-placeholder.png";
+    this.profileImage = "assets/pp.jpg";
     this.profileName = "John Doe";
     this.profileEmail = "johndoe@mail.com";
     this.profileSexo = "Masculino";
