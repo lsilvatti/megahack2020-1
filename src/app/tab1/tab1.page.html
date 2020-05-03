@@ -1,17 +1,25 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 1
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+ <div class="topbar-wrapper">
+  <div *ngIf="isVisible" class="ng-hide topbar">
+    <img class="topbar-icons spent" src="{{spentIcon}}"/>
+    <h3><strong>Gastos esse mês</strong></h3>
+    <p class="spent-text">R$ {{ spent }}</p>
+    <p>{{ desc }}</p>
+    <h3><strong>Ganhos esse mês</strong></h3>
+    <img class="topbar-icons saved" src="{{savedIcon}}"/>
+    <p class="saved-text">R$ {{ saved }}</p>
+    <p>{{ objective }}</p>
+  </div>
+</div>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <div class="topbar-button-div" (click)="expandTopBar()">
+    <img id="topbar-button" src="{{buttonArrow}}"/>
+  </div>
+  <div class="game-div-room">
+      <img src="{{ playerRoom }}" class="player-room-img">
+  </div>
+  <div class="game-div-player">
+    <img src="{{ playerImg }}" class="player-img">
+  </div>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
 </ion-content>
