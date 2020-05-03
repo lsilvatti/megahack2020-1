@@ -1,0 +1,8 @@
+[
+    {
+        "room": "./assets/imgs/quarto-vazio.png",
+        "objects": [{
+            "objectname": "mesa"
+        }]
+    }
+]

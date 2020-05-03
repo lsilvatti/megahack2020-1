@@ -1,17 +1,38 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 1
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+ 
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <!-- <div class="topbar-wrapper">
+    <div *ngIf="isVisible" class="ng-hide topbar">
+      <img class="topbar-icons spent" src="{{spentIcon}}"/>
+      <h3><strong>Gastos esse mês</strong></h3>
+      <p class="spent-text">R$ {{ spent }}</p>
+      <p>{{ desc }}</p>
+      <h3><strong>Ganhos esse mês</strong></h3>
+      <img class="topbar-icons saved" src="{{savedIcon}}"/>
+      <p class="saved-text">R$ {{ saved }}</p>
+      <p>{{ objective }}</p>
+    </div>
+  </div> -->
+  <!-- <div class="topbar-button-div" (click)="expandTopBar()">
+    <img id="topbar-button" src="{{buttonArrow}}"/>
+  </div> -->
+  <div class="game-div-room">
+      <img src="{{ playerRoom }}" class="player-room-img">
+      <img src="{{ playerImg }}" class="player-img">
+      <div class="game-objects">
+          <img src="./assets/imgs/mesa.png" class="object-mesa" *ngIf="obtainedObjects[0]"/>
+          <img src="./assets/imgs/lampada.png" class="object-lampada" *ngIf="obtainedObjects[1]"/>
+          <img src="./assets/imgs/quadro.png" class="object-quadro" *ngIf="obtainedObjects[2]"/>
+      </div>
+  </div>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+  <div class="cart-div">
+    <img src="./assets/icon/cart-outline.svg" class="cart-button"/>
+  </div>
+  <div class="friends-div">
+    <img src="./assets/icon/people.svg" class="friends-button"/>
+  </div>
+  <div class="add-transation-div" (click)="registerTransation()">
+    <img src="./assets/icon/add-outline.svg" class="add-transation-button"/>
+  </div>
 </ion-content>
