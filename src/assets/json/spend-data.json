@@ -1,22 +1,25 @@
 [
-    {
-      "title": "Comida",
-      "type": "outcome",
-      "value": "195,00"
-    },
-    {
-        "title": "Internet",
+   {
+     "player": "id1",
+     "spending": [{
+        "title": "Comida",
         "type": "outcome",
-        "value": "100,00"
-    },
-    {
-        "title": "Pagamento",
-        "type": "income",
-        "value": "600,00"
-    },
-    {
-        "title": "Loteria",
-        "type": "income",
-        "value": "3,50"
+        "value": "195,00"
+        },
+        {
+            "title": "Internet",
+            "type": "outcome",
+            "value": "100,00"
+        },
+        {
+            "title": "Pagamento",
+            "type": "income",
+            "value": "600,00"
+        },
+        {
+            "title": "Loteria",
+            "type": "income",
+            "value": "3,50"
+        }]
     }
 ]

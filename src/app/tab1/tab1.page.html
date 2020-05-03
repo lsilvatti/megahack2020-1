@@ -13,16 +13,16 @@
       <p>{{ objective }}</p>
     </div>
   </div> -->
-<!--   <div class="topbar-button-div" (click)="expandTopBar()">
+  <!-- <div class="topbar-button-div" (click)="expandTopBar()">
     <img id="topbar-button" src="{{buttonArrow}}"/>
   </div> -->
   <div class="game-div-room">
       <img src="{{ playerRoom }}" class="player-room-img">
       <img src="{{ playerImg }}" class="player-img">
       <div class="game-objects">
-        <ion-img *ngFor="let object of arrayObjects">
-          <img src="{{ object.img }}" class="{{ object.class }}"/>
-        </ion-img>
+          <img src="./assets/imgs/mesa.png" class="object-mesa" *ngIf="obtainedObjects[0]"/>
+          <img src="./assets/imgs/lampada.png" class="object-lampada" *ngIf="obtainedObjects[1]"/>
+          <img src="./assets/imgs/quadro.png" class="object-quadro" *ngIf="obtainedObjects[2]"/>
       </div>
   </div>
 
@@ -32,7 +32,7 @@
   <div class="friends-div">
     <img src="./assets/icon/people.svg" class="friends-button"/>
   </div>
-  <div class="add-transation-div">
-    <img src="./assets/icon/add-outline.svg" class="friends-button"/>
+  <div class="add-transation-div" (click)="registerTransation()">
+    <img src="./assets/icon/add-outline.svg" class="add-transation-button"/>
   </div>
 </ion-content>
