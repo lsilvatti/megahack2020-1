@@ -1,9 +1,8 @@
-import { Component, Pipe } from '@angular/core';
+import { Component } from '@angular/core';
 import { AlertController } from '@ionic/angular';
 import spendData from '../../assets/json/spend-data.json';
 import playerData from '../../assets/json/player-data.json';
 
-@Pipe({name: 'arrayObjects',pure:false})
 @Component({
   selector: 'app-tab1',
   templateUrl: 'tab1.page.html',
