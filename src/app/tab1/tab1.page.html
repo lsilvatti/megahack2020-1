@@ -1,25 +1,24 @@
- <div class="topbar-wrapper">
-  <div *ngIf="isVisible" class="ng-hide topbar">
-    <img class="topbar-icons spent" src="{{spentIcon}}"/>
-    <h3><strong>Gastos esse mês</strong></h3>
-    <p class="spent-text">R$ {{ spent }}</p>
-    <p>{{ desc }}</p>
-    <h3><strong>Ganhos esse mês</strong></h3>
-    <img class="topbar-icons saved" src="{{savedIcon}}"/>
-    <p class="saved-text">R$ {{ saved }}</p>
-    <p>{{ objective }}</p>
-  </div>
-</div>
+ 
 
 <ion-content [fullscreen]="true">
-  <div class="topbar-button-div" (click)="expandTopBar()">
+  <!-- <div class="topbar-wrapper">
+    <div *ngIf="isVisible" class="ng-hide topbar">
+      <img class="topbar-icons spent" src="{{spentIcon}}"/>
+      <h3><strong>Gastos esse mês</strong></h3>
+      <p class="spent-text">R$ {{ spent }}</p>
+      <p>{{ desc }}</p>
+      <h3><strong>Ganhos esse mês</strong></h3>
+      <img class="topbar-icons saved" src="{{savedIcon}}"/>
+      <p class="saved-text">R$ {{ saved }}</p>
+      <p>{{ objective }}</p>
+    </div>
+  </div> -->
+<!--   <div class="topbar-button-div" (click)="expandTopBar()">
     <img id="topbar-button" src="{{buttonArrow}}"/>
-  </div>
+  </div> -->
   <div class="game-div-room">
       <img src="{{ playerRoom }}" class="player-room-img">
-  </div>
-  <div class="game-div-player">
-    <img src="{{ playerImg }}" class="player-img">
+      <img src="{{ playerImg }}" class="player-img">
   </div>
 
 </ion-content>

@@ -60,18 +60,14 @@
     position: relative;
     z-index: 0;
     object-fit: cover;
-    min-width: 100%;   
-    min-height: 100%;
+    height: 100vh;
     background-color: blue;
 }
 
 .player-img {
-    position: relative;
+    position: absolute;
+    top: 20vh;
+    left:25vw;
     z-index: 1;
-}
-
-.game-div-player {
-    position: relative;
-    left: 50vw;
-    bottom: 80vh;
+    height: 80vh;
 }
