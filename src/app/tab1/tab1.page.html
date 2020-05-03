@@ -19,6 +19,20 @@
   <div class="game-div-room">
       <img src="{{ playerRoom }}" class="player-room-img">
       <img src="{{ playerImg }}" class="player-img">
+      <div class="game-objects">
+        <ion-img *ngFor="let object of arrayObjects">
+          <img src="{{ object.img }}" class="{{ object.class }}"/>
+        </ion-img>
+      </div>
   </div>
 
+  <div class="cart-div">
+    <img src="./assets/icon/cart-outline.svg" class="cart-button"/>
+  </div>
+  <div class="friends-div">
+    <img src="./assets/icon/people.svg" class="friends-button"/>
+  </div>
+  <div class="add-transation-div">
+    <img src="./assets/icon/add-outline.svg" class="friends-button"/>
+  </div>
 </ion-content>

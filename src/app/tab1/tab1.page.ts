@@ -18,7 +18,7 @@ export class Tab1Page {
   public objective = "Economizar R$ 1500"
   public playerImg = "./assets/imgs/boneco.png"
   public playerRoom = null;
-  public arrayObjects = [];
+  public arrayObjects = [{}];
 
   constructor() {
     this.getSpentValues()
@@ -59,9 +59,13 @@ export class Tab1Page {
   }
 
   getPlayerRoom() {
-    this.playerRoom = playerData[0].room
+    this.playerRoom = playerData[0].room;
+    var temp = {"img": null, "class": null};
     for(var i = 0; i < playerData[0].objects.length; i++){
-      this.arrayObjects.push(playerData[0].objects[i].objectimg);
+      temp.img = playerData[0].objects[i].objectimg;
+      temp.class = playerData[0].objects[i].objectclass;
+
+      this.arrayObjects.push({"img": temp.img, "class": temp.class});
     }
   }
 }
