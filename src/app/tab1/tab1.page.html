@@ -25,14 +25,16 @@
           <img src="./assets/imgs/quadro.png" class="object-quadro" *ngIf="obtainedObjects[2]"/>
       </div>
   </div>
-
-  <div class="cart-div">
-    <img src="./assets/icon/cart-outline.svg" class="cart-button"/>
-  </div>
-  <div class="friends-div">
+<div class="buttons">
+  <div class="friends-div button-game">
     <img src="./assets/icon/people.svg" class="friends-button"/>
   </div>
-  <div class="add-transation-div" (click)="registerTransation()">
+  <div class="cart-div button-game">
+    <img src="./assets/icon/cart-outline.svg" class="cart-button"/>
+  </div>
+  <div class="add-transation-div button-game" (click)="registerTransation()">
     <img src="./assets/icon/add-outline.svg" class="add-transation-button"/>
   </div>
+</div>
+  
 </ion-content>

@@ -2,7 +2,6 @@
     width: 50px;
     height: 50px;
 }
-
 .topbar {  
     background-color: #ffffff;
     width: 90%;
@@ -52,7 +51,7 @@
 }
 
 .game-div-room {
-    height: 100%;
+    height: 100vh;
     margin: 0;
 }
 
@@ -100,43 +99,43 @@
 }
 
 .friends-div {
-    border-color: #000000;
-    border-style: dashed;
-    padding: 5px;
+    border: solid 10px #fff;
     background-color: #ffffff;
     border-radius: 50%;
-    position: absolute;
-    bottom: 35vh;
-    right: 5vw;
-    z-index: 2;
-    height: 100px;
-    width: 100px;
+    height: 50px;
+    width: 50px;
 }
 
 .cart-div {
-    border-color: #000000;
-    border-style: dashed;
-    padding: 5px;
+    border: solid 10px #fff;
     background-color: #ffffff;
     border-radius: 50%;
-    position: absolute;
-    bottom: 25vh;
-    right: 5vw;
-    z-index: 2;
-    height: 100px;
-    width: 100px;
+    height: 50px;
+    width: 50px;
+    margin: 20px 0px;
 }
 
 .add-transation-div {
-    border-color: #000000;
-    border-style: dashed;
-    padding: 5px;
+    border: solid 10px #d90368;
     background-color: #D90368;
     border-radius: 50%;
+    height:70px;
+    width: 70px;
+}
+
+.buttons{
     position: absolute;
-    bottom: 30vh;
-    right: 5vw;
-    z-index: 2;
-    height: 100px;
-    width: 100px;
+    bottom:20vh;
+    right: 5vh;
+    display: flex;
+    flex-direction:column;
+    z-index: 10;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-game{
+    -webkit-box-shadow: 1px 8px 28px 0px rgba(0,0,0,0.16);
+    -moz-box-shadow: 1px 8px 28px 0px rgba(0,0,0,0.16);
+    box-shadow: 1px 8px 28px 0px rgba(0,0,0,0.16);
 }
