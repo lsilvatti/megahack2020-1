@@ -6,7 +6,7 @@ App criado para o Megahack 2020-1
 
 Conteúdo
 
-1.  [Requerimentos](#requisitos)
+1.  [Requisitos](#requisitos)
 2.  [Descrição do Problema](#descrição-do-problema)
 3.  [Proposta de Solução](#proposta-de-solução)
 4.  [Imagens](#imagens)
